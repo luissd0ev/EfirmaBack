@@ -46,6 +46,7 @@ using System.Text.RegularExpressions;
 using System;
 using System.IO;
 using UglyToad.PdfPig;
+using APIEfirma.Services;
 
 
 namespace APIEfirma.Controllers
@@ -56,10 +57,12 @@ namespace APIEfirma.Controllers
     {
         private readonly ICertificadoService _certificadoService;
         private readonly IFirmaService _firmaService;
-        public EfirmaController(ICertificadoService certificadoService, IFirmaService firmaService)
+        private readonly StorageService _storageService;
+        public EfirmaController(ICertificadoService certificadoService, IFirmaService firmaService, StorageService storageService)
         {
             _certificadoService = certificadoService;
             _firmaService = firmaService;
+            _storageService = storageService;
         }
 
         private string firmante = "";
@@ -137,6 +140,11 @@ namespace APIEfirma.Controllers
                 );
 
                 pdfFirmado.Position = 0;
+                byte[] pdfFirmadoBytes = pdfFirmado.ToArray();
+                string nombreArchivo = $"{DateTime.Now:yyyyMMdd_HHmmss}_{Guid.NewGuid()}.pdf";
+                // Guardar el documento firmado en la ubicación configurada
+
+                await _storageService.SaveFileAsync(pdfFirmadoBytes, nombreArchivo);
                 return File(pdfFirmado, "application/pdf", "documento_firmado.pdf");
 
 
