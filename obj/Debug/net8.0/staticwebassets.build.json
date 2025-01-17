@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "qBnxuIWOF0gOvNorBAZhf+0ELRbwzhL2ybuXsiLogd4=",
+  "Hash": "4AZhmEkVlDfzjHybKfcm3sPQQ16BjOm+UUxvSW9A7C4=",
   "Source": "APIEfirma",
   "BasePath": "_content/APIEfirma",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
