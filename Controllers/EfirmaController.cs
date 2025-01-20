@@ -47,6 +47,7 @@ using System;
 using System.IO;
 using UglyToad.PdfPig;
 using APIEfirma.Services;
+using APIEfirma.Repositories;
 
 
 namespace APIEfirma.Controllers
@@ -58,11 +59,15 @@ namespace APIEfirma.Controllers
         private readonly ICertificadoService _certificadoService;
         private readonly IFirmaService _firmaService;
         private readonly StorageService _storageService;
-        public EfirmaController(ICertificadoService certificadoService, IFirmaService firmaService, StorageService storageService)
+        private IEfirma _efirmaRepository;
+
+        public EfirmaController(ICertificadoService certificadoService, IFirmaService firmaService, StorageService storageService, IEfirma efirmaRepository)
         {
             _certificadoService = certificadoService;
             _firmaService = firmaService;
             _storageService = storageService;
+            _efirmaRepository = efirmaRepository;
+       
         }
 
         private string firmante = "";
@@ -92,7 +97,7 @@ namespace APIEfirma.Controllers
             {
                 // Leer los archivos en memoria
                 using var keyMemoryStream = new MemoryStream();
-                await key.OpenReadStream().CopyToAsync(keyMemoryStream);
+                 await key.OpenReadStream().CopyToAsync(keyMemoryStream);
 
                 using var cerMemoryStream = new MemoryStream();
                 await cer.OpenReadStream().CopyToAsync(cerMemoryStream);
@@ -191,7 +196,27 @@ namespace APIEfirma.Controllers
             }
         }
 
-     
+        // Método para obtener los documentos
+        [HttpGet("GetDocuments")]
+        public async Task<IActionResult> GetDocuments()
+        {
+            try
+            {
+                var documents = await _efirmaRepository.getDocuments();
+
+                if (documents == null || documents.Count == 0)
+                {
+                    return NotFound("No se encontraron documentos.");
+                }
+
+                return Ok(documents);  // Devuelves los documentos obtenidos
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error al obtener los documentos: {ex.Message}");
+            }
+        }
+
     }
 
 

@@ -7,24 +7,32 @@
       "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:controllers\\efirmacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\repositories\\efirmarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:repositories\\efirmarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\services\\firmaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:services\\firmaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\repositories\\iefirma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:repositories\\iefirma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\services\\certificadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:services\\certificadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|solutionrelative:services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{693BA373-66C5-4BC3-B446-65FA8E973A75}|APIEfirma.csproj|c:\\users\\luiss\\source\\repos\\sat-update\\efirmaback\\interfaces\\ifirmaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,11 +85,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "DataCurp.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Models\\DataCurp.cs",
               "RelativeDocumentMoniker": "Models\\DataCurp.cs",
@@ -105,6 +113,36 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEfirma.cs",
+              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Repositories\\IEfirma.cs",
+              "RelativeDocumentMoniker": "Repositories\\IEfirma.cs",
+              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Repositories\\IEfirma.cs",
+              "RelativeToolTip": "Repositories\\IEfirma.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T17:54:10.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EfirmaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Repositories\\EfirmaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EfirmaRepository.cs",
+              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Repositories\\EfirmaRepository.cs",
+              "RelativeToolTip": "Repositories\\EfirmaRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T17:19:36.696Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EfirmaController.cs",
@@ -112,14 +150,66 @@
               "RelativeDocumentMoniker": "Controllers\\EfirmaController.cs",
               "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Controllers\\EfirmaController.cs",
               "RelativeToolTip": "Controllers\\EfirmaController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAH0AAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAYwNgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T21:59:52.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FirmaService.cs",
+              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\FirmaService.cs",
+              "RelativeDocumentMoniker": "Services\\FirmaService.cs",
+              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\FirmaService.cs",
+              "RelativeToolTip": "Services\\FirmaService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T22:09:50.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:38.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-04T21:37:56.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CertificadoService.cs",
+              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\CertificadoService.cs",
+              "RelativeDocumentMoniker": "Services\\CertificadoService.cs",
+              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\CertificadoService.cs",
+              "RelativeToolTip": "Services\\CertificadoService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T17:05:29.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "StorageService.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\StorageService.cs",
               "RelativeDocumentMoniker": "Services\\StorageService.cs",
@@ -131,55 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FirmaService.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\FirmaService.cs",
-              "RelativeDocumentMoniker": "Services\\FirmaService.cs",
-              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\FirmaService.cs",
-              "RelativeToolTip": "Services\\FirmaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T22:09:50.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:15:38.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-04T21:37:56.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CertificadoService.cs",
-              "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\CertificadoService.cs",
-              "RelativeDocumentMoniker": "Services\\CertificadoService.cs",
-              "ToolTip": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Services\\CertificadoService.cs",
-              "RelativeToolTip": "Services\\CertificadoService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T17:05:29.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "FirmaResultado.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Models\\FirmaResultado.cs",
               "RelativeDocumentMoniker": "Models\\FirmaResultado.cs",
@@ -191,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MvcCoreServiceCollectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\AppData\\Local\\Temp\\.vsdbgsrc\\7435d3d6f6f700c39ca6d72d46ac68eab372b237f8961ceac503bd68d4a6e17c\\MvcCoreServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7435d3d6f6f700c39ca6d72d46ac68eab372b237f8961ceac503bd68d4a6e17c\\MvcCoreServiceCollectionExtensions.cs",
@@ -203,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IFirmaService.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Interfaces\\IFirmaService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IFirmaService.cs",
@@ -215,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Monitor.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\AppData\\Local\\Temp\\.vsdbgsrc\\1ca169b5f8096b3fd01bc738c77225099d363dea7bb508bd774b256157500bca\\Monitor.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1ca169b5f8096b3fd01bc738c77225099d363dea7bb508bd774b256157500bca\\Monitor.cs",
@@ -227,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ResourceInvoker.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\AppData\\Local\\Temp\\.vsdbgsrc\\035296ba28aee9b1b99953bfdecff33a1ef009f9c4ad650163f69f885b78e3a3\\ResourceInvoker.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\035296ba28aee9b1b99953bfdecff33a1ef009f9c4ad650163f69f885b78e3a3\\ResourceInvoker.cs",
@@ -239,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Tools.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Utility\\Tools.cs",
               "RelativeDocumentMoniker": "Utility\\Tools.cs",
@@ -251,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "BrowserLinkMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\AppData\\Local\\Temp\\.vsdbgsrc\\6410a824d658e9bef2025f7be9cce60116432284226e8b65f9a7af48abaff25b\\BrowserLinkMiddleware.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6410a824d658e9bef2025f7be9cce60116432284226e8b65f9a7af48abaff25b\\BrowserLinkMiddleware.cs",
@@ -263,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "InferParameterBindingInfoConvention.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\AppData\\Local\\Temp\\.vsdbgsrc\\3d56677d8f90c7cd993bffbff2764725e887ddf3acb4e91598b3a6a17805cdde\\InferParameterBindingInfoConvention.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\3d56677d8f90c7cd993bffbff2764725e887ddf3acb4e91598b3a6a17805cdde\\InferParameterBindingInfoConvention.cs",
@@ -275,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "DatosCofirmaB.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Models\\DatosCofirmaB.cs",
               "RelativeDocumentMoniker": "Models\\DatosCofirmaB.cs",
@@ -287,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "FirmaElectronicaController.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Controllers\\FirmaElectronicaController.cs",
               "RelativeDocumentMoniker": "Controllers\\FirmaElectronicaController.cs",
@@ -299,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\luiss\\source\\repos\\SAT-UPDATE\\EfirmaBack\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
@@ -308,10 +350,6 @@
               "ViewState": "AgIAABAAAAAAAAAAAAAgwBkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T22:14:31.73Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

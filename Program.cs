@@ -1,10 +1,16 @@
 using APIEfirma.Interfaces;
 using APIEfirma.Services;
+using APIEfirma.Models;
+using Microsoft.EntityFrameworkCore;
+using APIEfirma.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddSingleton<StorageService>();
+builder.Services.AddDbContext<EfirmaDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("EfirmaConnection")));
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
@@ -15,6 +21,8 @@ builder.Services.AddScoped<ICertificadoService, CertificadoService>();
 builder.Services.AddScoped<IFirmaService, FirmaService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IEfirma, EfirmaRepository>(); 
 
 var app = builder.Build();
 app.UseCors("corsapp");
