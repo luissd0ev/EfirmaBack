@@ -22,7 +22,8 @@ builder.Services.AddScoped<IFirmaService, FirmaService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IEfirma, EfirmaRepository>(); 
+
+builder.Services.AddScoped<IDocumento<Documento>, DocumentoRepository<Documento>>();
 
 var app = builder.Build();
 app.UseCors("corsapp");

@@ -1,7 +1,7 @@
 ﻿namespace APIEfirma.Repositories
 {
-    public interface IEfirma
+    public interface IEfirma<T> : IRepository<T> where T : class
     {
-        public Task<dynamic> getDocuments();
+     
     }
 }

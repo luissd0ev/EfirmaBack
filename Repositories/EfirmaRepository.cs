@@ -4,25 +4,15 @@ using System.Text.RegularExpressions;
 
 namespace APIEfirma.Repositories
 {
-    public class EfirmaRepository:IEfirma
+    public class EfirmaRepository<T> : Repository<T>, IEfirma<T> where T : class
     {
         public EfirmaDbContext context;
 
-        public EfirmaRepository(EfirmaDbContext context) { 
+        public EfirmaRepository(EfirmaDbContext context): base(context) 
+        { 
             this.context = context;
         }
 
-        public async Task<dynamic> getDocuments()
-        {
-            var consulta = await (from doc in context.Documentos
-                                  select new
-                                  {
-                                      RFC = doc.DocRfc,
-                                      Hash = doc.DocHashcode
-                                  }
-                                  ).ToListAsync(); 
-
-            return consulta;
-        }
+       
     }
 }

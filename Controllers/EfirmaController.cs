@@ -59,15 +59,14 @@ namespace APIEfirma.Controllers
         private readonly ICertificadoService _certificadoService;
         private readonly IFirmaService _firmaService;
         private readonly StorageService _storageService;
-        private IEfirma _efirmaRepository;
+        private readonly IDocumento<Documento> _documento;  
 
-        public EfirmaController(ICertificadoService certificadoService, IFirmaService firmaService, StorageService storageService, IEfirma efirmaRepository)
+        public EfirmaController(ICertificadoService certificadoService, IFirmaService firmaService, StorageService storageService, IDocumento<Documento> documento)
         {
             _certificadoService = certificadoService;
             _firmaService = firmaService;
             _storageService = storageService;
-            _efirmaRepository = efirmaRepository;
-       
+            _documento = documento;
         }
 
         private string firmante = "";
@@ -148,7 +147,16 @@ namespace APIEfirma.Controllers
                 byte[] pdfFirmadoBytes = pdfFirmado.ToArray();
                 string nombreArchivo = $"{DateTime.Now:yyyyMMdd_HHmmss}_{Guid.NewGuid()}.pdf";
                 // Guardar el documento firmado en la ubicación configurada
+                // Guardar el documento en la base de datos
+                var nuevoDocumento = new Documento
+                {
+                    DocRfc = "RFC GENERIC", // Asume que `firmante` tiene un RFC
+                    DocNombredocumento = nombreArchivo,
+                    DocFirma = resultadoFirma.firma,
+                    DocHashcode = resultadoFirma.hash256
+                };
 
+                _documento.Insert(nuevoDocumento);
                 await _storageService.SaveFileAsync(pdfFirmadoBytes, nombreArchivo);
                 return File(pdfFirmado, "application/pdf", "documento_firmado.pdf");
 
@@ -197,25 +205,25 @@ namespace APIEfirma.Controllers
         }
 
         // Método para obtener los documentos
-        [HttpGet("GetDocuments")]
-        public async Task<IActionResult> GetDocuments()
-        {
-            try
-            {
-                var documents = await _efirmaRepository.getDocuments();
+        //[HttpGet("GetDocuments")]
+        //public async Task<IActionResult> GetDocuments()
+        //{
+        //    try
+        //    {
+        //        var documents = await _efirmaRepository.getDocuments();
 
-                if (documents == null || documents.Count == 0)
-                {
-                    return NotFound("No se encontraron documentos.");
-                }
+        //        if (documents == null )
+        //        {
+        //            return NotFound("No se encontraron documentos.");
+        //        }
 
-                return Ok(documents);  // Devuelves los documentos obtenidos
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error al obtener los documentos: {ex.Message}");
-            }
-        }
+        //        return Ok(documents);  // Devuelves los documentos obtenidos
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, $"Error al obtener los documentos: {ex.Message}");
+        //    }
+        //}
 
     }
 

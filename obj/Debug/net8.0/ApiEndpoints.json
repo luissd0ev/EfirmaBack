@@ -32,16 +32,6 @@
   },
   {
     "ContainingType": "APIEfirma.Controllers.EfirmaController",
-    "Method": "GetDocuments",
-    "RelativePath": "api/Efirma/GetDocuments",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "APIEfirma.Controllers.EfirmaController",
     "Method": "VerificarFirma",
     "RelativePath": "api/Efirma/VerificarFirma",
     "HttpMethod": "POST",
