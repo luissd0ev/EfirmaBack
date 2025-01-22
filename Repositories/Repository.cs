@@ -54,5 +54,20 @@ namespace APIEfirma.Repositories
 
             return result;
         }
+
+        public T? Get(params object[] keyValues)
+        {
+            T? entity = null;
+            try
+            {
+                entity = _dbSet.Find(keyValues);
+            }
+            catch (Exception)
+            {
+              
+            }
+
+            return entity;
+        }
     }
 }

@@ -43,7 +43,7 @@ namespace APIEfirma.Services
                 // Calcular el hash directamente desde el MemoryStream
                 documentoStream.Position = 0; // Asegurar que el stream esté al inicio
                 var hash256 = Tools.GetSHA256HashFromStream(documentoStream);
-
+                var hashDos = Tools.GetSHA256HashFromStream(documentoStream);
                 // Validar firma con llave privada
                 var temp = Tools.ObtieneFirma(cerStream, keyStream, datosBaseDoc.Pass, hash256);
 

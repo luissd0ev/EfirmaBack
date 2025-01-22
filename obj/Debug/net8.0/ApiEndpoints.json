@@ -32,6 +32,22 @@
   },
   {
     "ContainingType": "APIEfirma.Controllers.EfirmaController",
+    "Method": "ValidarFirma",
+    "RelativePath": "api/Efirma/ValidarFirma",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documento",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIEfirma.Controllers.EfirmaController",
     "Method": "VerificarFirma",
     "RelativePath": "api/Efirma/VerificarFirma",
     "HttpMethod": "POST",

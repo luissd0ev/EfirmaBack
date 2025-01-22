@@ -94,7 +94,7 @@ namespace APIEfirma.Controllers
 
             try
             {
-                // Leer los archivos en memoria
+                // Leer los archivos en memoria 
                 using var keyMemoryStream = new MemoryStream();
                  await key.OpenReadStream().CopyToAsync(keyMemoryStream);
 
@@ -144,8 +144,11 @@ namespace APIEfirma.Controllers
                 );
 
                 pdfFirmado.Position = 0;
+                var HashPdfFirmado = Tools.GetSHA256HashFromStreamDos(pdfFirmado);
+
                 byte[] pdfFirmadoBytes = pdfFirmado.ToArray();
                 string nombreArchivo = $"{DateTime.Now:yyyyMMdd_HHmmss}_{Guid.NewGuid()}.pdf";
+          
                 // Guardar el documento firmado en la ubicación configurada
                 // Guardar el documento en la base de datos
                 var nuevoDocumento = new Documento
@@ -153,11 +156,13 @@ namespace APIEfirma.Controllers
                     DocRfc = "RFC GENERIC", // Asume que `firmante` tiene un RFC
                     DocNombredocumento = nombreArchivo,
                     DocFirma = resultadoFirma.firma,
-                    DocHashcode = resultadoFirma.hash256
+                    DocHashcode = HashPdfFirmado
                 };
 
+            
                 _documento.Insert(nuevoDocumento);
                 await _storageService.SaveFileAsync(pdfFirmadoBytes, nombreArchivo);
+                pdfFirmado.Position = 0;
                 return File(pdfFirmado, "application/pdf", "documento_firmado.pdf");
 
 
@@ -167,7 +172,7 @@ namespace APIEfirma.Controllers
                 return StatusCode(500, new { message = "Ocurrió un error durante el proceso de firma.", error = ex.Message });
             }
         }
-
+ 
         [HttpPost("VerificarFirma")]
         public async Task<IActionResult> VerificarFirma(
          IFormFile documento
@@ -203,6 +208,44 @@ namespace APIEfirma.Controllers
                 return StatusCode(500, $"Error procesando el PDF: {ex.Message}");
             }
         }
+
+        [HttpPost("ValidarFirma")]
+        public async Task<IActionResult> ValidarFirma(IFormFile documento)
+        {
+            try
+            {
+                if (documento == null)
+                {
+                    return BadRequest(new { Message = "Archivo no válido" });
+                }
+
+                using var documentoMemoryStream = new MemoryStream();
+                await documento.OpenReadStream().CopyToAsync(documentoMemoryStream);
+
+                // Asegúrate de reiniciar la posición del stream
+                documentoMemoryStream.Position = 0;
+
+                // Calcula el hash
+                var hash256 = Tools.GetSHA256HashFromStream(documentoMemoryStream);
+
+                // Verifica si el documento ya existe en la base de datos
+                if (await _documento.FindDocumentAsync(hash256))
+                {
+                    // Si el documento existe, enviar mensaje de éxito
+                    return Ok(new { message = "El documento ya está validado y existe en la base de datos.", hash = hash256 });
+                }
+                else
+                {
+                    // Si el documento no existe, enviar mensaje de error
+                    return NotFound(new { message = "El documento no existe en la base de datos.", hash = hash256 });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Ocurrió un error en el proceso de validación: {ex.Message}" });
+            }
+        }
+
 
         // Método para obtener los documentos
         //[HttpGet("GetDocuments")]
