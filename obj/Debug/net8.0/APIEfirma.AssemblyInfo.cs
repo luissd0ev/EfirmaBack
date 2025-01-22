@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIEfirma")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47a51e5f516f3320453d7d27c4278e0404e9a235")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a353e570b70dac361f84860eb3da3b22a1ef8e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIEfirma")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIEfirma")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

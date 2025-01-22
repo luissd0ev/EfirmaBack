@@ -307,43 +307,7 @@ namespace APIEfirma.Utility
             }
         }
 
-        public static string GetSHA256HashFromStreamDos(Stream inputStream)
-        {
-            if (inputStream == null)
-            {
-                throw new ArgumentNullException(nameof(inputStream), "El flujo de entrada no puede ser nulo.");
-            }
-
-            if (!inputStream.CanRead)
-            {
-                throw new ArgumentException("El flujo de entrada no se puede leer.", nameof(inputStream));
-            }
-
-            try
-            {
-                using (var sha256 = new SHA256CryptoServiceProvider())
-                {
-                    byte[] hashedBytes = sha256.ComputeHash(inputStream);
-
-                    StringBuilder output = new StringBuilder();
-                    foreach (byte b in hashedBytes)
-                    {
-                        output.Append(b.ToString("x2").ToLower());
-                    }
-
-                    return output.ToString();
-                }
-            }
-            catch (ObjectDisposedException ex)
-            {
-                throw new InvalidOperationException("El flujo ya ha sido cerrado o eliminado.", ex);
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException("Ocurrió un error al calcular el hash SHA-256.", ex);
-            }
-        }
-
+  
         public static object GetDataToFormandobject(Type type, IFormCollection formulario)
       {
          List<PropertyInfo> propInfos = type.GetProperties().ToList();

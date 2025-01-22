@@ -144,7 +144,7 @@ namespace APIEfirma.Controllers
                 );
 
                 pdfFirmado.Position = 0;
-                var HashPdfFirmado = Tools.GetSHA256HashFromStreamDos(pdfFirmado);
+                var HashPdfFirmado = Tools.GetSHA256HashFromStream(pdfFirmado);
 
                 byte[] pdfFirmadoBytes = pdfFirmado.ToArray();
                 string nombreArchivo = $"{DateTime.Now:yyyyMMdd_HHmmss}_{Guid.NewGuid()}.pdf";
